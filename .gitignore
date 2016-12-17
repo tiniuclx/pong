@@ -1,0 +1,5 @@
+.cproject
+.project
+prog.elf
+prog.hex
+*.prefs
