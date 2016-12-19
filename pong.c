@@ -81,11 +81,12 @@ int main() {
 
 void drawAniBox(animated_box * box, uint16_t colour){
 	pictorDrawBox(box->TOP,box->BOT,BACKGROUND);
+
 	box->TOP.X += box->VEL_X;
 	box->TOP.Y += box->VEL_Y;
-
 	box->BOT.X += box->VEL_X;
 	box->BOT.Y += box->VEL_Y;
+
 	pictorDrawBox(box->TOP,box->BOT,colour);
 }
 
