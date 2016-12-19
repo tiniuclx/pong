@@ -65,3 +65,13 @@ void drawAniBox(animated_box * box, uint16_t colour){
 	box->BOT.Y += box->VEL_Y;
 	pictorDrawBox(box->TOP,box->BOT,colour);
 }
+
+int rectCollision(animated_box box1, animated_box box2){
+	if(box1.BOT.X > box2.TOP.X &&
+	   box1.TOP.X < box2.BOT.X &&
+	   box1.TOP.Y < box2.BOT.Y &&
+	   box1.BOT.Y > box2.TOP.Y  )
+		return 1;
+	else
+		return 0;
+}

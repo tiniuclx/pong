@@ -3,3 +3,4 @@
 prog.elf
 prog.hex
 *.prefs
+/Debug/
